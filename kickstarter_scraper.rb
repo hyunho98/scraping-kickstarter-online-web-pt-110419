@@ -17,6 +17,8 @@ def create_project_hash
       percent_funded: project.css('ul.project-stats lu.first.funded strong').text.gsub('%','').to_i
       }
     }
+
+  projects
 end
 
 create_project_hash
